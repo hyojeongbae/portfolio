@@ -1,0 +1,39 @@
+.Header {
+    display: flex;
+    flex-direction: column; 
+    /* border-bottom: 1px solid; */
+}
+
+.Header-info {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.Header-title {
+    font-size: 30px;
+    margin: 0;
+}
+
+.Header-tagline {
+    font-size: 13px;
+    color:slategray;
+}
+
+.Header-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;  
+    border-bottom: 3px solid lightgrey; 
+}
+
+.Header-navLink {
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.Header-navLink.active {
+    color: pink;
+}

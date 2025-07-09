@@ -10,49 +10,104 @@
             background-size: cover;
         }
     </style>
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css?v=1.0" />
 </head>
-<body>
-    
+<body>    
     <header class="Header" id="header">
-        <a class="Header-info" href="/" title="Home">
+        <nav class="Header-nav">
+            <div class="Header-nav-inner">
+                <a class="Header-navLink" href="#profile" title="profile">Profile</a>
+                <a class="Header-navLink" href="#projects" title="projects">Projects</a>
+                <a class="Header-navLink" href="#contact" title="posts">Contact</a>
+            </div>
+        </nav>
+        <!-- <a class="Header-info" href="/" title="Home">
             <h1 class="Header-title">B. Portfolio</h1>
             <div class="Header-tagline">Backend Engineer</div>
-        </a>
-        <nav class="Header-nav">
-            <a class="Header-navLink" href="/projects/" title="projects">Projects</a>
-            <a class="Header-navLink" href="/posts/" title="posts">Posts</a>
-            <a class="Header-navLink" href="/contact/" title="contact">Contact</a>
-        </nav>    
+        </a>    -->
     </header>
     <main class="Main" id="main">
-        <div class="Main-img-wrapper">
-            <img 
-            class="Main-img"
-            src="images/temp.webp"
-            />
-        </div>
-        <h1 class="Main-info">"안녕하세요 개발자<br><span class="name">배효정</span>입니다"</h1>
-        <div class="Main-profile">
-            <h2 class="Main-profile-title">강점</h2>
-            <div class="Main-profile-content">
-                <h3 class="content-title">제목을 입력해주세요.</h3>
-                <p class="content-content">내용을 입력해주세요.</p>
+        <section class="Main-section" id="profile">
+            <div class="Main-left">
+                <h1 class="Main-info">
+                    안녕하세요<br>어찌고저찌고 개발자<br><span class="name">배효정</span>입니다
+                </h1>                
+                <!-- <div class="Main-img-wrapper"> -->
+                <img class="Main-img" src="images/temp.webp" />
+                <!-- </div> -->
+                <!-- <h1 class="Main-info">
+                    안녕하세요<br>어찌고저찌고 개발자<br><span class="name">배효정</span>입니다
+                </h1> -->
             </div>
+
+            <div class="Main-right">
+                <h3 class="Main-profile-title">경력</h3>
+                <div class="Main-profile-content">
+                    <li class="content-title">- 삼성전자DS 소프트웨어연구소 현장실습</li>
+                    <!-- <p class="content-content">내용을 입력해주세요.</p> -->
+                    <li class="content-title">-우리fis academy</li>
+                    <!-- <p class="content-content">내용을 입력해주세요.</p> -->
+                </div>
+
+                <h3 class="Main-profile-title">보유 자격증</h3>
+                <div class="Main-profile-content2">정보처리기사</div>
+                <div class="Main-profile-content2">빅데이터분석기사</div>
+
+                <h3 class="Main-profile-title">기술 스택</h3>
+                <div class="content-title">Language
+                    <div class="Main-profile-content3">JAVA</div>
+                </div>
+                <div class="content-title">Framework & Library
+                    <div class="Main-profile-content3">Spring</div>
+                    <div class="Main-profile-content3">Springboot</div>
+                    <div class="Main-profile-content3">mysql</div>
+                    <div class="Main-profile-content3">JSP</div>
+                </div>
+                <div class="content-title">Tools
+                    <div class="Main-profile-content3">Git</div>
+                    <div class="Main-profile-content3">Postman</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Main-section centered-section" id="projects">
+            <h2 class="Main-profile-title">프로젝트</h2>
+            <div class="Main-profile-content">
+                <h3 class="content-title">LG전자 연계 자세 기반 홈 자동화 서비스 개발</h3>
+                <p class="content-content">어찌고저찌고</p>
+            </div>
+        </section>
+        <section class="Main-section centered-section" id="contact">
+            <h2 class="Main-profile-title">Contact</h2>
+            <div class="Main-profile-content">
+                <p class="content-content">이메일: your.email@example.com</p>
+                <p class="content-content">깃허브: github.com/yourid</p>
+            <!-- 또는 폼도 가능 -->
+            </div>
+        </section>
+        
+        <!-- <div class="Main-profile-header" id="profile">
+            <div class="Main-img-wrapper">
+                <img class="Main-img" src="images/temp.webp" />
+            </div>
+            <h1 class="Main-info">안녕하세요<br>어찌고저찌고 개발자<br><span class="name">배효정</span>입니다</h1>
+        </div>
+
+        <div class="Main-profile">
             <h2 class="Main-profile-title">경력</h2>
             <div class="Main-profile-content">
                 <h3 class="content-title">삼성전자DS 소프트웨어연구소 현장실습</h3>
                 <p class="content-content">내용을 입력해주세요.</p>
+                <h3 class="content-title">우리fis academy</h3>
+                <p class="content-content">내용을 입력해주세요.</p>
             </div>
-            <h2 class="Main-profile-title">대외활동</h2>
+            <h2 class="Main-profile-title" id="projects">프로젝트</h2>
             <div class="Main-profile-content">
                 <h3 class="content-title">LG전자 연계 자세 기반 홈 자동화 서비스 개발</h3>
-                <p class="content-content">내용을 입력해주세요.</p>
+                <p class="content-content">어찌고저찌고</p>
             </div>
-            <div class="Main-profile-content">
-                <h3 class="content-title">제목을 입력해주세요.</h3>
-                <p class="content-content">내용을 입력해주세요.</p>
-            </div>
+
             <h2 class="Main-profile-title">보유 자격증</h2>
             <div class="Main-profile-content2">
                 <div>정보처리기사</div>
@@ -78,7 +133,7 @@
                 <div class="Main-profile-content3">Postman</div>
             </div>
             
-        </div>
+        </div> -->
 
     </main>
     

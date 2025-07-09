@@ -1,8 +1,19 @@
+html, body {
+    font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* overflow-y: scroll; */
+    scroll-behavior: smooth;
+}
+
+/* ---------------------- Header ---------------------- */
 .Header {
     display: flex;
-    flex-direction: column; 
-    /* border-bottom: 1px solid; */
-    /* background-color: lightgrey; */
+    flex-direction: column;
+    padding-bottom: 100px;
 }
 
 .Header-info {
@@ -18,89 +29,123 @@
 
 .Header-tagline {
     font-size: 13px;
-    color:slategray;
+    color: slategray;
 }
 
 .Header-nav {
-    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
     display: flex;
-    justify-content: space-around;  
-    border-bottom: 3px solid lightgrey; 
-    margin-bottom: 100px;
+    z-index: 1000;
+}
+
+.Header-nav-inner {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1px;
+    padding-right: 20px;
+    width: 100%;
 }
 
 .Header-navLink {
     text-decoration: none;
-    color: black;
+    color: slategray;
     margin: 15px;
     font-weight: bold;
 }
 
-.Header-navLink.active {
-    color: pink;
+/* ---------------------- Profile Section ---------------------- */
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 40px 80px;
+    gap: 100px;  /* 기존 60px → 30px으로 줄임 */
+    flex-wrap: wrap;
+    scroll-margin-top: 100px;
+}
+
+
+.Main-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.Main-right {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* 왼쪽 - 이미지 + 소개 */
+/* .Main-img-wrapper {
+    width: 100%;
+    text-align: left;
+} */
+
+.Main-img {
+    width: 100%;
+    max-width: 300px;
+    min-width: 150px;
+    height: auto;
+}
+
+
+
+
+.Main-info {
+    display: inline-block;
+    font-size: clamp(16px, 5vw, 30px);
+    margin-top: 20px;
+    text-align: left;
 }
 
 .name {
     color: #0D6EFD;
 }
 
-.Main-info {
-    /* font-size: 40px; */
-    font-size: clamp(16px, 5vw, 40px);
-    margin-top: 10px;
-    margin-bottom: 100px;
-    text-align: center;
-}
-
-.Main-img-wrapper {
-    width: 100%;
-    text-align: center;
-}
-
-.Main-img {
-    /* margin-top: 100px; */
-    /* display: block;
-    margin: auto; */
-    width: 60%;
-    max-width: 400px;
-    height: auto;
-}   
-
-.Main-profile {
-    text-align: center;
-    width: 100%;
+/* 오른쪽 - 경력, 자격증, 스택 */
+.Main-right-content {
+    margin-bottom: 10px;
 }
 
 .Main-profile-title {
-    margin-top: 100px;
-    width: "60%";
-    text-align: center;
+    scroll-margin-top: 100px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
     color: black;
+}
 
+.centered-section .Main-profile-title {
+    text-align: center;
 }
 
 .Main-profile-content {
-    border: 1px solid lightgrey;
-    border-radius: 15px;
-    background-color: #ecf4ff;
-    padding: 10px;
-    margin: 20px auto;
-    width: 100%;
-    max-width: 550px;
+    /* border: 1px solid lightgrey; */
+    /* border-radius: 15px; */
+    /* background-color: #ecf4ff; */
+    /* padding: 15px; */
+    margin-top: 0;
+    margin-bottom: 20px;
     text-align: left;
     box-sizing: border-box;
+    font-size: 8px;
 }
 
 .Main-profile-content2 {
     display: inline-block;
-    /* padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 24px;
-    padding-right: 24px; */
     padding: 8px 24px;
     text-align: center;
     background-color: #dceaff;
     border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .Main-profile-content3 {
@@ -109,17 +154,54 @@
     text-align: center;
     border: 1px solid slategrey;
     border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-
 .content-title {
-
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 0;
     color: #0D6EFD;
+    font-size: 16px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    list-style: none;
 }
 
 .content-content {
-    margin-left: 20px;
+    margin-left: 0;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
+
+/* ---------------------- Projects & Contact ---------------------- */
+.Main-section {
+    padding: 100px 60px;
+    scroll-margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    /* background-color: black;     */
+}
+
+.Main-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: left;
+}
+
+.centered-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 60px;
+  scroll-margin-top: 100px;
+  text-align: center;
+}
+
+.centered-section .Main-profile-content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 600px;
+}
+
 

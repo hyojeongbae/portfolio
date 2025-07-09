@@ -1,3 +1,11 @@
+html {
+  overflow-y: scroll; /* 항상 수직 스크롤바 공간 확보 */
+}
+
+body {
+  padding-bottom: 100px; /* 원하는 만큼 조절 */
+}
+
 .Header {
     display: flex;
     flex-direction: column; 

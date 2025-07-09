@@ -15,128 +15,107 @@
 </head>
 <body>    
     <header class="Header" id="header">
+        <a class="Header-title" href="index.html">Hyotfolio</a>
         <nav class="Header-nav">
             <div class="Header-nav-inner">
                 <a class="Header-navLink" href="#profile" title="profile">Profile</a>
-                <a class="Header-navLink" href="#projects" title="projects">Projects</a>
-                <a class="Header-navLink" href="#contact" title="posts">Contact</a>
+                <a class="Header-navLink" href="#project" title="project">Projects</a>
+                <a class="Header-navLink" href="#" id="contactBtn">Contact</a>
             </div>
         </nav>
-        <!-- <a class="Header-info" href="/" title="Home">
-            <h1 class="Header-title">B. Portfolio</h1>
-            <div class="Header-tagline">Backend Engineer</div>
-        </a>    -->
     </header>
     <main class="Main" id="main">
-        <section class="Main-section" id="profile">
-            <div class="Main-left">
-                <h1 class="Main-info">
-                    안녕하세요<br>어찌고저찌고 개발자<br><span class="name">배효정</span>입니다
-                </h1>                
-                <!-- <div class="Main-img-wrapper"> -->
-                <img class="Main-img" src="images/temp.webp" />
-                <!-- </div> -->
-                <!-- <h1 class="Main-info">
-                    안녕하세요<br>어찌고저찌고 개발자<br><span class="name">배효정</span>입니다
-                </h1> -->
-            </div>
-
-            <div class="Main-right">
-                <h3 class="Main-profile-title">경력</h3>
-                <div class="Main-profile-content">
-                    <li class="content-title">- 삼성전자DS 소프트웨어연구소 현장실습</li>
-                    <!-- <p class="content-content">내용을 입력해주세요.</p> -->
-                    <li class="content-title">-우리fis academy</li>
-                    <!-- <p class="content-content">내용을 입력해주세요.</p> -->
-                </div>
-
-                <h3 class="Main-profile-title">보유 자격증</h3>
-                <div class="Main-profile-content2">정보처리기사</div>
-                <div class="Main-profile-content2">빅데이터분석기사</div>
-
-                <h3 class="Main-profile-title">기술 스택</h3>
-                <div class="content-title">Language
-                    <div class="Main-profile-content3">JAVA</div>
-                </div>
-                <div class="content-title">Framework & Library
-                    <div class="Main-profile-content3">Spring</div>
-                    <div class="Main-profile-content3">Springboot</div>
-                    <div class="Main-profile-content3">mysql</div>
-                    <div class="Main-profile-content3">JSP</div>
-                </div>
-                <div class="content-title">Tools
-                    <div class="Main-profile-content3">Git</div>
-                    <div class="Main-profile-content3">Postman</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="Main-section centered-section" id="projects">
-            <h2 class="Main-profile-title">프로젝트</h2>
-            <div class="Main-profile-content">
-                <h3 class="content-title">LG전자 연계 자세 기반 홈 자동화 서비스 개발</h3>
-                <p class="content-content">어찌고저찌고</p>
-            </div>
-        </section>
-        <section class="Main-section centered-section" id="contact">
-            <h2 class="Main-profile-title">Contact</h2>
-            <div class="Main-profile-content">
-                <p class="content-content">이메일: your.email@example.com</p>
-                <p class="content-content">깃허브: github.com/yourid</p>
-            <!-- 또는 폼도 가능 -->
-            </div>
-        </section>
-        
-        <!-- <div class="Main-profile-header" id="profile">
-            <div class="Main-img-wrapper">
-                <img class="Main-img" src="images/temp.webp" />
-            </div>
-            <h1 class="Main-info">안녕하세요<br>어찌고저찌고 개발자<br><span class="name">배효정</span>입니다</h1>
+        <div class="Main-start">
+            <h1 class="Main-greeting">안녕하세요<br>어찌고어찌고 개발자 배효정입니다</h1>
+            <p class="Main-intro">
+                인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인삿말인
+            </p>
         </div>
-
-        <div class="Main-profile">
-            <h2 class="Main-profile-title">경력</h2>
-            <div class="Main-profile-content">
-                <h3 class="content-title">삼성전자DS 소프트웨어연구소 현장실습</h3>
-                <p class="content-content">내용을 입력해주세요.</p>
-                <h3 class="content-title">우리fis academy</h3>
-                <p class="content-content">내용을 입력해주세요.</p>
-            </div>
-            <h2 class="Main-profile-title" id="projects">프로젝트</h2>
-            <div class="Main-profile-content">
-                <h3 class="content-title">LG전자 연계 자세 기반 홈 자동화 서비스 개발</h3>
-                <p class="content-content">어찌고저찌고</p>
-            </div>
-
-            <h2 class="Main-profile-title">보유 자격증</h2>
-            <div class="Main-profile-content2">
-                <div>정보처리기사</div>
-            </div>
-            <div class="Main-profile-content2">
-                <div>빅데이터분석기사</div>
-            </div>
-            <h2 class="Main-profile-title">기술 스택</h2>
-            <div>
-                <h3 class="content-title">Language</h3>
-                <div class="Main-profile-content3">JAVA</div>
-            </div>
-            <div>
-                <h3 class="content-title">Framework & Library</h3>
-                <div class="Main-profile-content3">Spring</div>
-                <div class="Main-profile-content3">Springboot</div>
-                <div class="Main-profile-content3">mysql</div>
-                <div class="Main-profile-content3">JSP</div>
-            </div>
-            <div>
-                <h3 class="content-title">Tools</h3>
-                <div class="Main-profile-content3">Git</div>
-                <div class="Main-profile-content3">Postman</div>
-            </div>
-            
-        </div> -->
-
+        <section class="Profile" id="profile">
+            <h2 class="Main-title">소개</h2>
+            <div class="Main-wrapper">
+                <div class="Main-left">
+                    <!-- <h1 class="Main-default">
+                        안녕하세요<br>어찌고저찌고 개발자<br><span class="name">배효정</span>입니다
+                    </h1>                 -->
+                    <img class="Main-img" src="images/profile.jpg" /> 
+                </div>
+                <div class="Main-right">
+                    <div class="education">
+                        <h3 class="Main-content">학력</h3>
+                        <div class="content-title">한양대학교 정보시스템학과 학부</div>
+                    </div>
+                    <div class="experience">
+                        <h3 class="Main-content">경력</h3>
+                        <div class="Main-profile-content">
+                            <li class="content-title">삼성전자DS 소프트웨어연구소 현장실습(2024.09.~2024.12.)</li>
+                            <!-- <p class="content-content">내용을 입력해주세요.</p> -->
+                            <li class="content-title">우리FIS Academy(2025.07.01.~2025.12.12.)</li>
+                            <!-- <p class="content-content">내용을 입력해주세요.</p> -->
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <h3 class="Main-content">보유 자격증</h3>
+                        <div class="Main-profile-content2">정보처리기사</div>
+                        <div class="Main-profile-content2">빅데이터분석기사</div>
+                    </div>
+                    <div class="skill">
+                        <h3 class="Main-content">기술 스택</h3>
+                        <ul class="Main-profile-list">
+                            <li class="skill-content">JAVA</li>
+                            <li class="skill-content">Spring</li>
+                            <li class="skill-content">Springboot</li>
+                            <li class="skill-content">mysql</li>
+                            <li class="skill-content">JSP</li>
+                            <li class="skill-content">Git</li>
+                            <li class="skill-content">Postman</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>   
+        </section>    
+        <section class="Project" id="project">
+            <h2 class="Main-title">프로젝트</h2>
+            <li class="Main-content">
+                <a href="https://charmed-expert-b6b.notion.site/TempoMate-c32bf36b8940496c9389e141f8710364" target="_blank">
+                    <img class="project-img1" src="images/tempomate.png" />
+                </a>
+                <h3 class="content-title2">LG전자 연계 자세 기반 홈 자동화 서비스 개발</h3>
+                <p class="content-content">어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고</p>
+            </li>
+            <li class="Main-content">
+                <a href="" target="_blank">
+                    <img class="project-img1" src="images/tempomate.png" />
+                </a>
+                <h3 class="content-title2">어찌고저찌고</h3>
+                <p class="content-content">어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고</p>
+            </li>
+            <li class="Main-content">
+                <a href="" target="_blank">
+                    <img class="project-img1" src="images/tempomate.png" />
+                </a>
+                <h3 class="content-title2">어찌고저찌고</h3>
+                <p class="content-content">어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고어찌고저찌고</p>
+            </li>
+        </section>    
     </main>
-    
+    <!-- body 끝나기 직전에 넣기 -->
+    <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <h2>Contact Me</h2>
+        <p>이메일: bhj09270@naver.com</p>
+        <p>Github: https://github.com/hyojeongbae</p>
+    </div>
+    </div>
+    <footer class="Footer">
+    <div class="Footer-content">
+        © 2025 배효정. All rights reserved.
+    </div>
+    </footer>
+
+
+    <script src="app.js"></script>    
 </body>
 </html>
 

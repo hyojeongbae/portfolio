@@ -5,164 +5,209 @@ html, body {
 }
 
 html {
-    /* overflow-y: scroll; */
     scroll-behavior: smooth;
+}
+
+section {
+    margin-bottom: 200px;
 }
 
 /* ---------------------- Header ---------------------- */
 .Header {
     display: flex;
-    flex-direction: column;
-    padding-bottom: 100px;
-}
-
-.Header-info {
-    text-align: center;
-    text-decoration: none;
-    color: #0D6EFD;
-}
-
-.Header-title {
-    font-size: 30px;
-    margin: 0;
-}
-
-.Header-tagline {
-    font-size: 13px;
-    color: slategray;
-}
-
-.Header-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.5);
+    height: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.Header-title {
+    text-decoration: none;
+    font-size: 40px;
+    margin: 0;
+    padding-left:20px;
+    color: #0D6EFD;
+    font-weight: bold;
+}
+
+.Header-title:hover {
+    color: #FFB6C1;
+}
+
+.Header-nav {
+    width: 100%;
     display: flex;
-    z-index: 1000;
 }
 
 .Header-nav-inner {
     display: flex;
     justify-content: flex-end;
-    gap: 1px;
+    gap: 15px;
     padding-right: 20px;
     width: 100%;
+    align-items: center;
 }
 
 .Header-navLink {
     text-decoration: none;
     color: slategray;
-    margin: 15px;
     font-weight: bold;
+    text-align: center;
 }
 
-/* ---------------------- Profile Section ---------------------- */
-#profile {
+
+.Main {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 100px 40px 80px;
-    gap: 100px;  /* 기존 60px → 30px으로 줄임 */
-    flex-wrap: wrap;
-    scroll-margin-top: 100px;
+    flex-direction: column;
+    align-items: center; /* 가로 중앙 정렬 */
+    margin-top: 280px;
+}
+
+
+---------------------- Profile Section ----------------------
+
+.Main-start{
+    display: flex;
+    text-align: center;
+}
+
+.Main-greeting {
+    /* display: inline-block; */
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 20px;
+    /* margin-bottom: 10px; */
+    color: #0D6EFD; /* 파란색 */
+}
+
+.Main-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  width:80%;
+  margin-bottom: 200px;
+}
+
+
+
+#profile, #project {
+    scroll-margin-top: 120px;  /* 헤더 높이보다 약간 크게 */
+}
+
+
+.project-img1 {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+@media (max-width: 905px) {
+  #profile {
+    justify-content: center;  /* 세로 배치 시 가로 중앙 정렬 */
+  }
+
+  .Main-title {
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .Profile .Main-right {
+    text-align: center;
+  }
+
+  .Profile .Main-right .Main-content{
+    text-align: center;
+  }
+}
+
+.Main-wrapper {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* align-items: flex-start;   */
+    flex-wrap: wrap;       
+    gap: 50px;
+    width: 100%;
+    margin-top: 40px;
 }
 
 
 .Main-left {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-.Main-right {
-    flex: 1;
+    flex-direction: column;  /* 위에서 아래로 */
+    align-items: center;     /* 중앙 정렬 */
     min-width: 280px;
 }
 
-/* 왼쪽 - 이미지 + 소개 */
-/* .Main-img-wrapper {
-    width: 100%;
-    text-align: left;
-} */
+.Main-right {
+
+  min-width: 280px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
 
 .Main-img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
     min-width: 150px;
     height: auto;
-}
-
-
-
-
-.Main-info {
-    display: inline-block;
-    font-size: clamp(16px, 5vw, 30px);
-    margin-top: 20px;
-    text-align: left;
+    border-radius: 10px;
 }
 
 .name {
     color: #0D6EFD;
 }
 
-/* 오른쪽 - 경력, 자격증, 스택 */
-.Main-right-content {
-    margin-bottom: 10px;
-}
-
-.Main-profile-title {
+.Profile .Main-content {
     scroll-margin-top: 100px;
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 18px;
     text-align: left;
     color: black;
+    font-weight: normal;
 }
 
-.centered-section .Main-profile-title {
+.Main-title {
     text-align: center;
+    font-size: 40px;
+
 }
 
-.Main-profile-content {
-    /* border: 1px solid lightgrey; */
-    /* border-radius: 15px; */
-    /* background-color: #ecf4ff; */
-    /* padding: 15px; */
-    margin-top: 0;
-    margin-bottom: 20px;
-    text-align: left;
-    box-sizing: border-box;
-    font-size: 8px;
-}
-
-.Main-profile-content2 {
-    display: inline-block;
-    padding: 8px 24px;
+.Project .Main-content {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    background-color: #dceaff;
-    border-radius: 15px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-
-.Main-profile-content3 {
-    display: inline-block;
-    padding: 6px 22px;
-    text-align: center;
-    border: 1px solid slategrey;
-    border-radius: 15px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    max-width: 600px;
+    min-width: 400px;
+    width: 50%;
+    list-style: none;
+    margin-bottom: 60px;
 }
 
 .content-title {
     margin-left: 0;
     color: #0D6EFD;
     font-size: 16px;
-    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    list-style: none;
+}
+.content-title2 {
+    margin-left: 0;
+    color: #0D6EFD;
+    font-size: 20px;
     margin-bottom: 10px;
     list-style: none;
 }
@@ -173,35 +218,86 @@ html {
     margin-bottom: 10px;
 }
 
-/* ---------------------- Projects & Contact ---------------------- */
-.Main-section {
-    padding: 100px 60px;
-    scroll-margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    /* background-color: black;     */
+.Main-profile-content2 {
+    display: inline-block;
+    padding: 8px 24px;
+    text-align: center;
+    background-color: #DCEAFF;
+    border-radius: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.Main-profile-content2:hover {
+    background-color: rgba(255, 111, 166, 0.5);;
+    color: white;
 }
 
-.Main-section h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: black;
-    text-align: left;
+.Main-profile-list {
+  display: flex;
+  gap: 10px;      
+  padding: 0;
+  margin: 0;
+  list-style: none; 
 }
 
-.centered-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 100px 60px;
-  scroll-margin-top: 100px;
+
+.skill-content {
+    list-style: none;
+    font-size: 10px;
+    display: flex;
+    padding: 6px 12px;
+    text-align: center;
+    border: 1px solid slategrey;
+    border-radius: 15px;
+    /* margin-bottom: 10px; */
+}
+
+.popup-overlay {
+    display:none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+section {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.Footer {
+  background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  color: #666;
+  position: relative; /* 필요시 fixed도 가능 */
+  margin-top: 100px; /* 위쪽 간격 */
 }
-
-.centered-section .Main-profile-content {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  max-width: 600px;
-}
-
 

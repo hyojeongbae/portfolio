@@ -35,3 +35,22 @@ window.addEventListener('click', (e) => {
     popup.style.display = 'none';
   }
 });
+
+window.addEventListener('DOMContentLoaded', () => {
+  const main = document.querySelector('.Main');
+  main.classList.add('fade-in');
+});
+
+document.querySelector('.Header-title').addEventListener('click', function(e) {
+  e.preventDefault();
+  const link = this.getAttribute('href');
+  
+  const main = document.querySelector('.Main');
+  main.classList.remove('fade-in');
+  main.classList.add('fade-out');
+  
+  setTimeout(() => {
+    window.location.href = link;
+  }, 500);
+});
+

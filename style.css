@@ -199,6 +199,10 @@ section {
     color: ivory;
 }
 
+.Project .Main-content-list {
+    list-style: none;
+    padding: 0;
+}
 .Project .Main-content {
     margin-left: auto;
     margin-right: auto;
@@ -208,6 +212,11 @@ section {
     width: 80%;
     list-style: none;
     margin-bottom: 60px;
+}
+
+.content-title-list {
+    list-style: none;
+    padding: 0;
 }
 
 .content-title {
@@ -265,7 +274,7 @@ section {
     padding: 8px 24px;
     text-align: center;
     /* border: 1px solid #898989; */
-    background-color: rgb(18, 24, 39);
+    background-color: rgb(23, 30, 49);
     color: rgba(255, 255, 255, 0.786);
     border-radius: 15px;
     margin-right: 10px;
@@ -274,7 +283,7 @@ section {
 }
 .Main-profile-content2:hover {
     border-color: ivory;
-    background-color: rgb(24, 32, 50);
+    background-color: rgb(34, 44, 68);
     color: ivory;
 }
 
